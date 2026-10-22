@@ -21,4 +21,5 @@ public record FunkoCreateRequest(
         @Pattern(regexp = "DISNEY|MARVEL|ANIME|OTROS",
                 message = "Debe ser DISNEY, MARVEL, ANIME u OTROS")
         String categoria
+
 ) {}
