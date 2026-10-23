@@ -37,7 +37,7 @@ public class FunkosServiceImpl implements FunkosService {
     public List<FunkoResponse> buscar(Optional<String> categoria, Optional<String> nombre,
                                       Optional<BigDecimal> precioMax) {
          log.debug("buscar categoria={} nombre={} precioMax={}", categoria, nombre, precioMax);
-        return mapper.toResponse(repositorio.buscar(categoria, nombre, precioMax));
+         return mapper.toResponse(repositorio.buscar(categoria, nombre, precioMax));
     }
 
     @Override
